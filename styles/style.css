@@ -5,8 +5,8 @@
 }
 
 .page {
-  min-inline-size: 360px;
   margin: 0;
+  min-inline-size: 360px;
 }
 
 p,
@@ -20,3 +20,69 @@ li,
 figure {
   margin: 0;
 }
+
+:root {
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway, sans-serif;
+  --accent-font: 'STIX Two Text', serif;
+}
+
+.page {
+  color: var(--text-color, #312A4E);
+  font-family: var(--main-font, Raleway, sans-serif);
+  background-color: var(--bg-color, #F3EFEC);
+}
+
+.header{
+  padding-top: 10%;
+}
+
+.heading {
+  color: #312A4E;
+  font-family: 'STIX Two Text';
+  font-weight: 600;
+  line-height: 90%;
+  text-align: center;
+}
+
+.content-section {
+  padding: 0 5vw;
+}
+
+.header__title {
+  margin-bottom: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 6.1728vw, 7.5rem);
+}
+.content__title {
+  width: 100%; 
+  margin-top: 7%;
+  margin-bottom: 2.5%;
+  font-size: 30px;
+}
+
+.content__text-block {
+  font-size: 18px;
+}
+
+.content__text-block 
+.content__paragraph:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: inherit;
+}
+
+.content__blockquote {
+  width: 75%;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 200%;
+}
+
+
+
+
