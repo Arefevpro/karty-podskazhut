@@ -77,11 +77,61 @@ a {
 
 .content__blockquote {
   width: 75%;
+  margin-right: auto;
   margin-bottom: 1.5em;
+  margin-left: auto;
   font-weight: 400;
   font-style: italic;
   line-height: 200%;
 }
+
+.content__list li {
+  position: relative;
+  padding-left: 25px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.content__list li:last-child {
+  margin-bottom: 0;
+}
+
+.content__list li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/marker-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-50%);
+}
+
+.content__text-block_type_first-lettered:first-letter {
+  display: inline-block;
+  padding: 0 4px;
+  margin-right: 1px;
+  background-color: var(--accent-color);font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content__figure {
+  min-width: calc(100% + (2 * 5vw));
+  margin-left: -20px;
+  position: relative;
+}
+
+.content__picture {
+  display: block;
+  width: 100%;
+  margin: 7% 0;
+}
+
+
 
 
 
