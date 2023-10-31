@@ -161,14 +161,14 @@ a:has(:focus-visible) {
 
 .content__figure {
   position: relative;
-  left: -7%;
+  left: -5.5%;
   min-width: calc(100% + (2 * 5vw));
   margin: 7% 0;
 }
 
 .content__picture {
   display: block;
-  width: 100vw;
+  width: 100%;
 }
 
 .content__picture-caption {
@@ -335,5 +335,6 @@ a:has(:focus-visible) {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+  border-top: 1px solid currentColor;
 }
 
