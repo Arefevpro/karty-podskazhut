@@ -152,23 +152,23 @@ a:has(:focus-visible) {
 .content__text-block_type_first-lettered:first-letter {
   display: inline-block;
   margin-right: 5px;
+  border: 1px solid var(--text-color);
   padding: 0 4px;font-family: Raleway;
   font-weight: 700;
   font-size: 30px;
   line-height: normal;
-  border: 1px solid var(--text-color);
 }
 
 .content__figure {
   position: relative;
+  left: -7%;
   min-width: calc(100% + (2 * 5vw));
-  margin-left: -20px;
+  margin: 7% 0;
 }
 
 .content__picture {
   display: block;
-  width: 100%;
-  margin: 7% 0;
+  width: 100vw;
 }
 
 .content__picture-caption {
@@ -179,6 +179,7 @@ a:has(:focus-visible) {
   margin-bottom: 6.3vw;
   border-bottom: 1px solid currentColor;
   padding: 20px 0;
+  font-size: 18px;
 }
 
 .content__card {
@@ -268,8 +269,8 @@ a:has(:focus-visible) {
   padding: 0;
   color: currentColor;
   font-size: inherit;
-  cursor: pointer;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .header__theme-button_type_dark {
