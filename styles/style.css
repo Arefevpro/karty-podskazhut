@@ -24,15 +24,22 @@ figure {
 :root {
   --bg-color: #171717;
   --text-color: #B3B3B3;
+  --text-color-g: #312A4E;
   --accent-color: transparent;
   --main-font: Raleway, sans-serif;
   --accent-font: 'STIX Two Text', serif;
+  --bg-color-w: #F3EFEC;
 }
 
 .page {
-  color: var(--text-color, #312A4E);
+  color: var(--text-color-g);
   font-family: var(--main-font, Raleway, sans-serif);
-  background-color: var(--bg-color, #F3EFEC);
+  background-color: var(--bg-color-w);
+}
+
+.theme_dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .header{
@@ -151,7 +158,7 @@ a:has(:focus-visible) {
 .theme_dark 
 .content__text-block_type_first-lettered:first-letter {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: -1px;
   border: 1px solid var(--text-color);
   padding: 0 4px;font-family: Raleway;
   font-weight: 700;
@@ -337,4 +344,7 @@ a:has(:focus-visible) {
   text-transform: uppercase;
   border-top: 1px solid currentColor;
 }
+
+
+
 
